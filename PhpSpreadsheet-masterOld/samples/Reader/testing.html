@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myTabDiv">
+        <table name="mytab" id="mytab1">
+          <tr> 
+            <td>col1 Val1</td>
+            <td>col2 Val2</td>
+          </tr>
+          <tr>
+            <td>col1 Val3</td>
+            <td>col2 Val4</td>
+          </tr>
+        </table>
+        </div>
+</body>
+<script>
+
+for (let row of mytab1.rows) 
+{
+    for(let cell of row.cells) 
+    {
+       console.log(cell.innerText)
+    }
+}
+
+</script>
+</html>
